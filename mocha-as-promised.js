@@ -3,7 +3,7 @@
 
     // Module systems magic dance.
 
-    if (typeof require === "function" && typeof exports === "object" && typeof module === "object") {
+    if (typeof require === "function" && typeof exports === "object" && (typeof module === "object" || typeof module === "function")) {
         // Node.js: plug in automatically, if no argument is provided. This is a good idea since one can run Mocha tests
         // using the Mocha test runner from either a locally-installed package, or from a globally-installed one.
         // In the latter case, naively plugging in `require("mocha")` would end up duck-punching the wrong instance,
